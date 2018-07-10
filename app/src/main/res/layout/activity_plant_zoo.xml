@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/plant_zoo_bottom_pic">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/progress_item_exd_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_progress_exd"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"/>
+        <ProgressBar
+            android:id="@+id/progress_item_grow_progress_bar"
+            android:layout_toRightOf="@id/progress_item_exd_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp" />
+        <TextView
+            android:id="@+id/progress_item_grow_data_view"
+            android:layout_toRightOf="@id/progress_item_exd_view"
+            android:layout_below="@id/progress_item_grow_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            tools:text="1500/3000(成长期)"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/progress_item_sun_view"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_progress_sun"
+            android:padding="4dp"/>
+        <ProgressBar
+            android:id="@+id/progress_item_sun_progress_bar"
+            android:layout_toRightOf="@id/progress_item_sun_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+        <ImageView
+            android:id="@+id/progress_item_thunder_view"
+            android:layout_below="@id/progress_item_sun_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_progress_thunder"
+            android:padding="4dp"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/progress_item_thunder_data_view"
+            android:layout_toRightOf="@id/progress_item_sun_view"
+            android:layout_below="@id/progress_item_sun_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            tools:text="1400"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/thunder_collect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
